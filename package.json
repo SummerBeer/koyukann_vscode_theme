@@ -1,0 +1,46 @@
+{
+	"name": "theme-koyukann",
+	"version": "1.0.0",
+	"publisher": "koyukann",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"displayName": "Koyukann Theme",
+	"description": "Koyukann themes for VS Code.",
+	"categories": [
+		"Themes"
+	],
+	"repository": {
+		"git": "https://github.com/SummerBeer/koyukann_vscode_theme.git"
+	},
+	"license": "MIT",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Koyukann Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/koyukann_dark.json"
+			}
+		],
+		"iconThemes": [
+			{
+				"id": "Koyukann",
+				"label": "Koyukann",
+				"path": "./icons.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"onecolor": "^3.0.4"
+	},
+	"dependencies": {},
+	"scripts": {
+		"build": "node src/generate",
+		"prepack": "node src/generate"
+	},
+	"__metadata": {
+		"id": "d2149167-a7c8-4dea-ad4e-8e7a7fc63f35",
+		"publisherId": "8c148d69-cbc6-480b-bd8b-a42715926324",
+		"publisherDisplayName": "be5invis"
+	}
+}
